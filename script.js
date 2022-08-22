@@ -13,14 +13,12 @@ const sodavand = document.querySelector("#sodavand");
 
 
 
-
-
   function klik_øl() {
-    this.removeEventListener("mousedown", klik_øl);
-    if click {
-        //console.log("indeholder alkohol");
+    document.getElementById("#oel.webp").click();
+    if onclick {
+        console.log("indeholder alkohol");
     }
     else {
 
     }
-  }
+  } 
