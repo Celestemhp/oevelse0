@@ -1,53 +1,14 @@
-//Lyt efter klik på alle elementer
-øl.addEventListener("mousedown", klik_øl);
-snaps.addEventListener("mousedown", klik_snaps);
-faxe.addEventListener("mousedown", klik_faxe);
-sodavand.addEventListener("mousedown", klik_sodavand);
+document.querySelector("øl").addEventListener("click", tjek);
+document.querySelector("snaps").addEventListener("click", tjek);
+document.querySelector("faxe").addEventListener("click", tjek);
+document.querySelector("sodavand").addEventListener("click", tjek);
 
-function mousedown() {
-  if (mousedown) {
-    console.log("indeholder alkohol");
-}
-else {
-    console.log("none");
-}
-}
-
-function klik_øl() {
-
-  if (mousedown) {
+function tjek() {
+  console.log("this.alt");
+  if (this.alt == "øl" || this.alt == "snaps") {
       console.log("indeholder alkohol");
   }
   else {
-      console.log("none");
+    console.log("alkoholfri");
   }
-} 
-function klik_snaps() {
-
-  if (mousedown) {
-      console.log("indeholder alkohol");
-  }
-  else {
-      console.log("none");
-  }
-} 
-
-function klik_faxe() {
-
-  if (mousedown) {
-      console.log("alkoholfri");
-  }
-  else {
-      console.log("none");
-  }
-} 
-
-function klik_sodavand() {
-
-  if (mousedown) {
-      console.log("alkoholfri");
-  }
-  else {
-      console.log("none");
-  }
-} 
+}
