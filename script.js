@@ -4,8 +4,6 @@ snaps.addEventListener("mousedown", klik_snaps);
 faxe.addEventListener("mousedown", klik_faxe);
 sodavand.addEventListener("mousedown", klik_sodavand);
 
-document.querySelector("#øl").klik_øl();
-
 function mousedown() {
   if (mousedown) {
     console.log("indeholder alkohol");
@@ -19,6 +17,35 @@ function klik_øl() {
 
   if (mousedown) {
       console.log("indeholder alkohol");
+  }
+  else {
+      console.log("none");
+  }
+} 
+function klik_snaps() {
+
+  if (mousedown) {
+      console.log("indeholder alkohol");
+  }
+  else {
+      console.log("none");
+  }
+} 
+
+function klik_faxe() {
+
+  if (mousedown) {
+      console.log("alkoholfri");
+  }
+  else {
+      console.log("none");
+  }
+} 
+
+function klik_sodavand() {
+
+  if (mousedown) {
+      console.log("alkoholfri");
   }
   else {
       console.log("none");
